@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/c_functionexpression.js",
+            "program": "${workspaceRoot}/d_in.js",
             "cwd": "${workspaceRoot}"
         },
         {
