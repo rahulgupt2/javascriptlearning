@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/b_deleteoperator.js",
+            "program": "${workspaceRoot}/c_functionexpression.js",
             "cwd": "${workspaceRoot}"
         },
         {
