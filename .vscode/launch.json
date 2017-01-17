@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceRoot}/d_in.js",
+            "program": "${workspaceRoot}/nodeasyntest/a.js",
             "cwd": "${workspaceRoot}"
         },
         {
