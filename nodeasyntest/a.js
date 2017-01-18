@@ -1,6 +1,2 @@
-
-for (let i=0 ; i< 100000; i++) {
-    console.log(i);
-}
-
-console.log('cscds');
+var a = 'sfsfds \n fsdfsd';
+console.log(a);

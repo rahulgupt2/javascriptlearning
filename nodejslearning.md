@@ -70,3 +70,24 @@ so nodejs is single threaded.it just have an event loop. in this case event loop
 
 when that operation finishes callback function is executed. 
 
+
+================18-01==============
+
+My understanding of the technology is that it is compiled on the fly into assembly. 
+On the speed spectrum it is slower than Java but faster than Ruby and Python. 
+On the client side an interpreter makes sense but on the server side my first thought
+is that compilation prior to running, or at least having the option to do so, is an optimal architecture. 
+If the JavaScript was pre compiled in this way would it run faster than Java? Or is it something to do with 
+weakly typed languages which means that JavaScript will always be slower than Java?
+
+cross platform code for nodejs.
+https://shapeshed.com/writing-cross-platform-node/
+
+
+open source means software is free of charge any one can modify it and improve it.
+
+
+
+
+
+
