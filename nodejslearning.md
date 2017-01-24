@@ -83,8 +83,18 @@ weakly typed languages which means that JavaScript will always be slower than Ja
 cross platform code for nodejs.
 https://shapeshed.com/writing-cross-platform-node/
 
-
 open source means software is free of charge any one can modify it and improve it.
+
+
+=================24-01===============
+
+compiled language => ready to run, often faster, source code is private.
+disadv => not cross-platform, inflexible, extra step
+
+compiled language => cross-platform, simpler to test, easier to debug
+disadv => interpreter required, often slower, source code is public.
+
+
 
 
 
