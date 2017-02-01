@@ -94,10 +94,22 @@ disadv => not cross-platform, inflexible, extra step
 compiled language => cross-platform, simpler to test, easier to debug
 disadv => interpreter required, often slower, source code is public.
 
+compiled c, c++, 
+interpreted PHP, javascript.
+hybrid java, c#, VB.NET
+
+https://blog.udemy.com/learn-node-js/
 
 
+node is written in c++ becasue V8 is written in c++
 
+ecmascript is the standerd in which javascript is based on.
 
+javascript engine is the program that converts javascript code into something the computer processor can understand.
 
+and it should follow the ecmascript standerd on how the language should work and what feature it should have.
 
+we can get the v8 engine code. and execute the code in our machine. we can enhance the code as well.
+
+we can also convert javascript code to machine code from v8 engine.
 

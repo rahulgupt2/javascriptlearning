@@ -27,7 +27,7 @@ and checking the Valid OAuth redirect URIs in the Client OAuth Settings section.
 
 if user logged in successfully you will get tgis URL
 
-https://rahulguptachatapp.herokuapp.com/?code=AQAakt2EPERrCrUMuUkbNJeI2SXkeS_8oSmbkwGQHDGOlsC2unBOF1sPGV_PPXIsyVbfOlWHho89YshkCYA9y3ottw7Wy9L8Op37yf6mksxq4nRMy7gbzfIU54jJGO3UqLQRt_UDnVS70MfVfMxg1L_2cs4oUoIpC2pIQNdLCQF1QnICsDew8X3ClHsRzIWOTVS342w5lWsdq_RXPwDYSNlRIBc29CCQK0oFV6Pc5jovTeaVEzVMeM6B9uQdB2smxgY7gnRu99-mT_f32XKCmg0J0G-X3rAJSLTtACQ159DNUNLeQ8wNRJsMr28dOfCJo7VwQ68HD0GM1ivWvtYUAA71#_=_
+https://rahulguptachatapp.herokuapp.com/?code=AQBi1FSk6pN2JP8z5lHi_PHqvN6GB80amaKJ4VYbswr0V9g7BTWOYEwPsMSF7uPm80pgOBgrJm3arkbcEFJFw63EfyaeHiPi-U3LlnDKz6ECuMTU5WFygXdZomdZHctIqaVJKNpjOJh59NqIj1idYgpRfeDkAy1celoAZ9EXdv8oFYJ0xk22R0lfmQCQR2jMXv9l6QWeACgKbsVGwMyrzCnmnp-c04D4xP1gPIdRYEpH1s2h9u-CBz0IJLqRKJMC7BNupUGqGqt88kJvblFUU2dPGEFreqlGAr6dHZuIGU08T0P1NwAL9IMtu_NFTUrN9pHv7b_T0Wfc8fqaF_zTAw_3#_=_
 
 3. 
      to reconfirm this code is sent by facebook or not. we get access token
@@ -39,7 +39,7 @@ https://graph.facebook.com/v2.8/oauth/access_token?
    &code={code-parameter}
 
 https://graph.facebook.com/v2.8/oauth/access_token?client_id=226544714462643&redirect_uri=https://rahulguptachatapp.herokuapp.com/
-&client_secret=9fgfgd17bfgdg596a821f9507099cc6c2bfd&code=AQA6oONucbbMTONHxcC709XVxF0BpdW5Ns5ltwPGfsQ8GFsGx2o6UmIWo6y2MD3rhuJx79oM2ByjW7A8nlqK0YbMLL1_bqXz7dkofiSJU3ZxygDFMGcJwx0RpUbW4b5ESq_AKddn0d5LhMzCN9DmTU3OWhjLW5zIhP39R7veJT79ynOMYTUNms-nXIm82PLRnm7ky8VKYBoEWVMb8dFvTqQgGeSD0D8e1tSUufGrGpeHhbMjEMkaxBiroEdl2H1hHWc8OR13TWG4eJZo1e7ZYeeTO9Qo7_W3mfTq4mWpqdhVpY1VKh5adOg-oNPRh4gveMCagWzFg3-3OPA8NEIFMDpN#_=_
+&client_secret=95a417b38596a821f9507099cc6c2bfd&code=AQBi1FSk6pN2JP8z5lHi_PHqvN6GB80amaKJ4VYbswr0V9g7BTWOYEwPsMSF7uPm80pgOBgrJm3arkbcEFJFw63EfyaeHiPi-U3LlnDKz6ECuMTU5WFygXdZomdZHctIqaVJKNpjOJh59NqIj1idYgpRfeDkAy1celoAZ9EXdv8oFYJ0xk22R0lfmQCQR2jMXv9l6QWeACgKbsVGwMyrzCnmnp-c04D4xP1gPIdRYEpH1s2h9u-CBz0IJLqRKJMC7BNupUGqGqt88kJvblFUU2dPGEFreqlGAr6dHZuIGU08T0P1NwAL9IMtu_NFTUrN9pHv7b_T0Wfc8fqaF_zTAw_3#_=_
 
 
 4. after hitting above url you will get the access token. 
@@ -49,11 +49,24 @@ https://graph.facebook.com/v2.8/oauth/access_token?client_id=226544714462643&red
 "expires_in":5182179}    
 
 
-5. 
+5. obtain id by this url 
+
+https://graph.facebook.com/me?access_token=EAADOCo07NbMBALTlMNgWQyWPfcvgelfpxmlV2bJjiJUaMDdrZBa3ffxofddhjJfs2VQxddbgF8gVQeKw5NikaKTZC9ZCPmyVfZAhAgWDHlsdQ2oJZBa9B3sFo139qVgbyLaQ33ldlNMTw8HcrBgpKosdj3PbcXZBYZD
+
+{
+   "name": "Rahul Gupta",
+   "id": "752443924904662"
+}
+
+6. 
 
 GET /v2.8/{user-id}/picture HTTP/1.1
 Host: graph.facebook.com
 
+graph.facebook.com/v2.8/752443924904662/picture
+
 refer to this
 https://developers.facebook.com/docs/graph-api/using-graph-api/
 
+
+me/bgolub?fields=id,name,picture
