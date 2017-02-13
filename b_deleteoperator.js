@@ -1,3 +1,5 @@
+
+
 //"use strict";
 var Employee = {
   age: 28,
@@ -40,3 +42,13 @@ if (3 in trees) {
 // output : [ 'redwood', 'bay', 'cedar', , 'maple' ]
 
 
+var a ={
+    l : 'cdscsd',
+    k: 'dsdfsdf'
+};
+
+if(a.l) {
+    delete a.l;
+}
+
+console.log(a);
